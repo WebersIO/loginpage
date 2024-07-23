@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    overflow: hidden;
+}
+
 .container-xl {
     max-width: 1320px;
     margin: auto;
@@ -160,6 +164,11 @@ form {
     margin: 10px 0px;
 }
 
+video {
+    width: 100%;
+
+}
+
 .gif-login {
     width: 100%;
     display: flex;
@@ -180,6 +189,36 @@ form {
     width: 100%;
 }
 
-.wlc-back {
-    back
+@media (max-width:991px) {
+    .main-login {
+        width: 80%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .gif-login{
+        width:100%
+    }
+    .login{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .respo-login {
+        width: 100%;
+    }
+
+
 }
+
+@media (max-width:425px) {
+    .input {
+        width: 80%;
+    }
+
+    .login-btn {
+        width: 80%;
+
+    }
+}
+
