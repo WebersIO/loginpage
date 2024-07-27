@@ -18,6 +18,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 </head>
 
 <body>
@@ -35,12 +37,12 @@
                     <a href="#" class="anchor">Sign-up</a>
                 </div>
                 <div class="nav-links">
-                    <a href="#" class="anchor"><i class="ri-customer-service-line"></i></i></a>
+                    <a href="#" class="anchor"><i class="ri-customer-service-line"></i></a>
                 </div>
             </div>
 
             <div class="menu">
-                <button onclick="button()" class="menu-btn"><i class="ri-menu-line change"></i></button>
+                <button class="menu-btn"><i class="ri-menu-line change"></i></button>
             </div>
         </div>
     </nav>
@@ -59,7 +61,7 @@
 
                 <div class="gif-login">
                     <div class="respo-gif">
-                        <img src="/img/login.gif" alt="">
+                        <img src="/img/login.gif" alt="" class="">
                         <h2 class="wlc-back">welcome back</h2>
                     </div>
                 </div>
@@ -89,10 +91,19 @@
             </div>
         </div>
     </div>
+
+    <div class="empty">
+
+    </div>
 </body>
 
 <script>
-document.querySelector('video').playbackRate = 0.5;
+    document.querySelector('video').playbackRate = 0.5;
+
+    $(".menu").click(function () {
+        $(".nav").slideToggle(1200);
+    })
+
 </script>
 
 </html>
