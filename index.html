@@ -18,9 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-</head>
+
 
 <body>
     <nav>
@@ -47,9 +45,10 @@
         </div>
     </nav>
 
-<video autoplay loop muted>
-    <source src="/vid/natural-overlay.mp4"></source>
-</video>
+    <video autoplay loop muted>
+        <source src="/vid/natural-overlay.mp4">
+        </source>
+    </video>
 
     <div class="container-xl main-login">
 
@@ -96,14 +95,5 @@
 
     </div>
 </body>
-
-<script>
-    document.querySelector('video').playbackRate = 0.5;
-
-    $(".menu").click(function () {
-        $(".nav").slideToggle(1200);
-    })
-
-</script>
 
 </html>
