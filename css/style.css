@@ -253,12 +253,12 @@ video {
 @media (max-width:991px) {
     .main-login {
         width: 80%;
-        box-shadow: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         text-align: center;
         flex-direction: column;
         flex-wrap: wrap;
         color: white;
-        background-color: transparent;
+        background-color: white;
         top: 10%;
     }
 
