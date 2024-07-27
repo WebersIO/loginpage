@@ -119,7 +119,7 @@ nav>h2 {
 
 form {
     display: flex;
-
+    padding: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -136,7 +136,7 @@ form {
 .user-help a {
     font-size: 10px;
     text-decoration: none;
-    margin: 30px 0px;
+    margin: 10px 0px;
 }
 
 .user-help {
@@ -181,11 +181,8 @@ form {
 video {
     object-fit: cover;
     width: 100vw;
-    z-index: -1;
-    height: 150vh;
-    position: fixed;
-    top: 90px;
-    left: 0;
+    /* z-index: 1; */
+    height: 1500px;
 }
 
 .gif-login {
@@ -197,7 +194,7 @@ video {
 }
 
 .respo-gif {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,21 +203,22 @@ video {
 
 .respo-gif>img {
     width: 100%;
+    z-index: 5;
 }
 
 .empty {
-    height: 1500px;
+    height: 150px;
     width: 100%;
 }
 
 .respo-gif>img {
     background-color: transparent;
-    mix-blend-mode: overlay;
 }
 
 
-@media (max-width:767px) {
-    .nav {
+@media (max-width:768px) {
+    #navbar {
+        display: none;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -233,12 +231,21 @@ video {
         border-radius: 10px;
     }
 
+    .respo-gif>img {
+        width: 60%;
+        z-index: 5;
+    }
+
     .menu {
         display: flex;
     }
 
     .nav-links {
         display: none;
+    }
+
+    .respo-gif {
+        width: 50%;
     }
 }
 
@@ -252,6 +259,11 @@ video {
         color: white;
         background-color: transparent;
         top: 10%;
+    }
+
+    .respo-gif>img {
+        width: 30%;
+        z-index: 5;
     }
 
     .gif-login {
@@ -274,10 +286,20 @@ video {
 @media (max-width:425px) {
     .input {
         width: 80%;
+        margin: 5px 0px;
     }
 
     .login-btn {
         width: 80%;
 
+    }
+
+    form {
+        padding: 3px 0px;
+    }
+
+    .respo-gif>img {
+        width: 100%;
+        z-index: 5;
     }
 }
